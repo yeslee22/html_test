@@ -1,0 +1,64 @@
+@import url('./reset.css');
+
+header{
+    position: absolute; width:100%;
+    top:0; left:0;
+}
+
+header > div{
+    width:1320px; margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+header > div > h1{}
+header > div > h1 > a{ 
+    color: var(--point-color); 
+    text-transform: capitalize;
+}
+header > div > nav{}
+header > div > nav > a{ 
+    color: white; 
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.spot{
+    height: 100vh;
+    background: url('../imgs/header.jpg') center / 400% no-repeat;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    animation: spot 5s forwards;
+}
+@keyframes spot {
+    100%{
+        background-size: 150%;
+    }
+}
+
+
+.spot > span{
+    font-size: 2.3rem;
+}
+.spot >p{
+    font-size: 4.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.spot >a{
+    background-color: var(--point-color);
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 23px 40px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
