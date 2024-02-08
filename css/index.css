@@ -1,4 +1,5 @@
 @import url('./reset.css');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 header{
     position: absolute; width:100%;
@@ -10,55 +11,92 @@ header > div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 0;
+    padding:80px 0;
 }
 header > div > h1{}
 header > div > h1 > a{ 
-    color: var(--point-color); 
+    color:var(--point-color); 
     text-transform: capitalize;
 }
 header > div > nav{}
-header > div > nav > a{ 
-    color: white; 
-    padding: 0 20px;
+header > div > nav > a{
+    color:white;
+    padding:0 20px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .spot{
-    height: 100vh;
-    background: url('../imgs/header.jpg') center / 400% no-repeat;
-    color: white;
+    height:100vh;
+    
+    color:white;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
+
+    background: url('../imgs/header.jpg') center / 400% no-repeat;
     animation: spot 5s forwards;
 }
-@keyframes spot {
-    100%{
-        background-size: 150%;
+    @keyframes spot {
+        100%{
+            background-size: 150%;
+        }
     }
-}
 
 
-.spot > span{
-    font-size: 2.3rem;
+.spot>span{
+    font-size:2.3rem;
 }
-.spot >p{
-    font-size: 4.6rem;
+.spot>p{
+    font-size:4.6rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
-.spot >a{
+.spot>a{
     background-color: var(--point-color);
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding: 23px 40px;
+    padding:23px 40px;
     border-radius: 6px;
-    margin-top: 30px;
+    margin-top:30px;
 }
+
+/* service */
+.service{
+    width:1320px; margin:100px auto;
+    text-align: center;
+}
+.service > h2{}
+.service > div{
+    display: flex;
+    justify-content: space-between;
+    margin-top:60px;
+}
+.service > div > article{width:31%}
+.service > div > article::before{
+    content: 'shopping_cart';
+    font-family: 'Material Symbols Outlined';
+    color:white; 
+    font-size:4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    background-color: var(--point-color);
+    width:128px; height:128px;
+    border-radius: 100%;
+}
+.service > div > article:nth-of-type(2):before{
+    content: 'shopping_bag';
+}
+.service > div > article:nth-of-type(3):before{
+    content: 'shopping_bag';
+}
+.service > div > article > h3{}
+.service > div > article > p{}

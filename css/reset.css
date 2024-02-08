@@ -23,6 +23,7 @@ a{color: black; text-decoration: none;}
 
 :root{
     --point-color:#FFC800;
+    --wid:1320px;
 }
 
 h2,h3{
