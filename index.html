@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="html 계층형 기본 프레임 제작">
+    <meta name="author" content="greenart">
+
+    <meta property="og:url"                content="https://yeslee22.github.io/html_test/" />
+    <meta property="og:type"               content="wedsite" />
+    <meta property="og:title"              content="웹사이트" />
+    <meta property="og:description"        content="html15 마크업을 이용한 웹사이트입니다." />
+    <meta property="og:image"              content="./imgs/link6.png" />
+
+
+
+    <title>Start bootstrap</title>
     <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="shortcut icon" href="./imgs/link6.png" type="image/x-icon">
+
+
 </head>
 <body>
     <!-- index.html -->
@@ -28,7 +45,7 @@
         <div class="spot">
             <span>Welcome To Our Studio!</span>
             <p>It's Nice To Meet You</p>
-            <a href="#">Tell Me More</a>
+            <a href="#" class="btn">Tell Me More</a>
         </div>
 
         <section class="service">
@@ -57,10 +74,107 @@
             </div>
         </section>
 
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./imgs/link1.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link2.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link3.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link4.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link5.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link6.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <form>
+                <div class="info">
+                    <div>
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your email">
+                        <input type="tel" name="tel" placeholder="Your tel">
+                    </div>
+                    <div>
+                        <textarea name="content"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn">SEND MESSAGE</button>
+                </div>
+            </form>
+           
+            
+        </section>
+
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <address>회사정보관련 내용</address>
+        <nav>
+            <a href="#">twitter</a>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+        </nav>
+        <nav>
+            <a href="#">services</a>
+            <a href="#">portfolio</a>
+            <a href="#">about</a>
+            <a href="#">team</a>
+            <a href="#">contact</a>
+        </nav>
+    </footer>
 
 
 

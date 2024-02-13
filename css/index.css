@@ -55,15 +55,7 @@ header > div > nav > a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
-.spot>a{
-    background-color: var(--point-color);
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    padding:23px 40px;
-    border-radius: 6px;
-    margin-top:30px;
-}
+
 
 /* service */
 .service{
@@ -98,5 +90,96 @@ header > div > nav > a{
 .service > div > article:nth-of-type(3):before{
     content: 'shopping_bag';
 }
-.service > div > article > h3{}
-.service > div > article > p{}
+.service > div > article > h3{
+    margin: 20px 0;
+}
+.service > div > article > p{
+    line-height: 1.8;
+}
+
+
+/* portfolio */
+
+.portfolio{
+    width: 1320px; margin: 120px auto;
+    text-align: center;
+}
+.portfolio > h2{}
+.portfolio > p{}
+.portfolio > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-top: 60px;
+
+}
+.portfolio > ul > li{
+    width: 31%;
+}
+.portfolio > ul > li > figure{}
+.portfolio > ul > li > figure > img{width: 100%;}
+.portfolio > ul > li > figure > figcaption{
+    padding: 24px 0;
+    transition: 0.5s;    
+}
+
+.portfolio > ul > li > figure > figcaption > b{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #212529;
+    font-size: 1.5rem;
+}
+.portfolio > ul > li > figure > figcaption > p{}
+
+.portfolio > ul > li > figure:hover{
+    background-color: rgb(224, 224, 224);
+
+}
+
+
+/* contact */
+
+.contact{
+    height: 720px;
+    background: url(../imgs/map.png) 0 0 ; cover no-repeat;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact >  h2{ color: white;}
+.contact > p{}
+
+.contact  .info{
+    width: 1320px; margin: 64px auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact  .info > div{width: 49%;}
+.contact  .info > div > input{
+    width: 100%; padding: 20px;
+    border-radius: 6px;
+    border: none;
+}
+.contact  .info > div > input::placeholder{
+    color: #ddd;
+    font-weight: bold;
+}
+
+.contact  .info > div > input:nth-of-type(2){margin: 4% 0;}
+.contact  .info > div > textarea{
+    width: 100%; padding: 20px;
+    border-radius: 6px;
+    height: 100%;
+    border: none;
+}
+
+
+footer{
+    width: 1320px; margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer address{
+    font-size: normal;
+}
+footer nav{}

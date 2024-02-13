@@ -34,6 +34,19 @@ h2,h3{
 h2{font-size: 2.5rem;}
 h3{font-size: 1.5rem;}
 
+
+.btn{
+    background-color: var(--point-color);
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding:23px 40px;
+    border-radius: 6px;
+    margin-top:30px;
+    border: none;
+}
+
+
 /* 태그초기화 / 글꼴, 색상, */
 
 
